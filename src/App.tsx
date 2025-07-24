@@ -1,21 +1,29 @@
-import { TimerIcon } from 'lucide-react';
-import { Header } from './components/Header/Header';
+import { Container } from './components/Container';
+import { Counter } from './components/Counter';
+import { Input } from './components/Input';
+import { Logo } from './components/Logo';
+import { Menu } from './components/Menu';
 
 export function App() {
   return (
     <>
-      <Header>
-        Hello World!
-        <button type='button'>
-          <TimerIcon />
-        </button>
-      </Header>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-        voluptatem fuga possimus mollitia! Impedit nulla tempora non tempore,
-        maiores veritatis itaque incidunt facilis a dicta placeat laborum ea
-        quaerat. Nostrum.
-      </p>
+      <div className={'container-fluid'}>
+        <Container>
+          <Logo />
+        </Container>
+        <Container>
+          <Menu />
+        </Container>
+        <Container>
+          <Counter />
+        </Container>
+        <Container>
+          <form action='' className='form'>
+            <Input type='text' label='Task' id='task' />
+            <Input type='text' id='task' />
+          </form>
+        </Container>
+      </div>
     </>
   );
 }
