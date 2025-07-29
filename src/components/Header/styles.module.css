@@ -1,11 +1,7 @@
-.heading {
+.header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.4rem;
+  height: 10vh;
   color: var(--primary);
-}
-
-.button {
-  background-color: var(--primary);
 }
